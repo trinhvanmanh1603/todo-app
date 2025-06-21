@@ -1,0 +1,24 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "birthday": "1990-01-01",
+      "location": "New York",
+      "phone": "123-456-7890",
+      "password": "admin123",
+      "avatarUrl": "/avatar.jpg"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "email": "user1@gmail.com",
+      "birthday": "1995-05-15",
+      "location": "Los Angeles",
+      "phone": "987-654-3210",
+      "password": "user123",
+      "avatarUrl": "/avatar2.png"
+    }
+  ]
+}

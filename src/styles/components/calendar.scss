@@ -1,0 +1,15 @@
+
+* {
+    box-sizing: border-box;
+}
+.calendar {
+    max-height: 94vh;
+    overflow-y: auto;
+    height: 50%;
+    width: 100%;
+    border-radius: 1vw;
+    padding: 1.5rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+}

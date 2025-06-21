@@ -1,0 +1,91 @@
+.seven-day-board {
+  display: flex;
+  gap: 1.5vw;
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.seven-day-column {
+  background-color: rgba(245, 245, 245, 0.8);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  min-width: 40vw;
+  max-width: 340px;
+  flex: 1 1 0;
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.seven-day-header {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+.main-label {
+  color: #222;
+}
+.sub-label {
+  color: #b0b0b0;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+
+.seven-day-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.seven-day-task-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: start;
+}
+.task-meta {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  font-weight: 500;
+}
+.task-title {
+  font-size: 1.05rem;
+  color: #222;
+  font-weight: 500;
+  text-align: start;
+}
+
+.seven-day-add-task {
+  margin-top: 0.5rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  color: #b0b0b0;
+  font-weight: 500;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 1.5px solid #f0f0f0;
+  transition: background 0.15s, color 0.15s;
+}
+.plus:hover {
+  background: #eaf6ff;
+  color: #2196f3;
+}
+.seven-day-add-task button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+}
+

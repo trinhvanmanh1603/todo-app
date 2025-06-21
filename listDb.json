@@ -1,0 +1,66 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "title": "Personal List",
+      "description": "A list of items",
+      "items": [
+        {
+          "id": 1,
+          "date": "2025-06-25",
+          "time": "15:00",
+          "title": "Triển khai staging",
+          "content": "Deploy bản mới lên môi trường staging để kiểm thử.",
+          "state": false
+        },
+        {
+          "id": 2,
+          "date": "2025-06-21",
+          "time": "10:00",
+          "title": "Họp khách hàng",
+          "content": "Trình bày tiến độ và demo chức năng đã hoàn thiện.",
+          "state": false
+        },
+        {
+          "id": 3,
+          "date": "2025-06-22",
+          "time": "13:30",
+          "title": "Tối ưu hiệu năng",
+          "content": "Phân tích và cải thiện hiệu suất hệ thống.",
+          "state": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Work List",
+      "description": "A list of work-related items",
+      "items": [
+        {
+          "id": 1,
+          "date": "2025-06-25",
+          "time": "15:00",
+          "title": "Triển khai staging",
+          "content": "Ăn trưa",
+          "state": false
+        },
+        {
+          "id": 2,
+          "date": "2025-06-21",
+          "time": "10:00",
+          "title": "Họp khách hàng",
+          "content": "tham gia họp với khách hàng để trình bày tiến độ và demo chức năng đã hoàn thiện.",
+          "state": false
+        },
+        {
+          "id": 3,
+          "date": "2025-06-22",
+          "time": "13:30",
+          "title": "Tối ưu hiệu năng",
+          "content": "Phân tích và cải thiện hiệu suất hệ thống.",
+          "state": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.account {
+  width: 100%;
+  padding: 16px;
+  background-color: #84d1eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  gap: 1vw;
+}
+.account-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.username {
+  width: 100%;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+
+}
+
+.email {
+  color: gray;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 1.5vw;
+  left: 22vw;
+  width: 20vw;
+  background-color: white;
+  animation: slideIn 0.3s ease-out forwards;
+  transform-origin: top left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+}
+@keyframes slideIn {
+  0% {
+    transform: scale(0) translate(-400%, -40%);
+    opacity: 0;
+    transform-origin: top left;
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+    transform-origin: top left;
+  }
+}

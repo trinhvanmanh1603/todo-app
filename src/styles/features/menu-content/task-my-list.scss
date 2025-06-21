@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.task-my-list {
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.list-item-content {
+    padding: 0.8rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3vw;
+}
+
+.list-item-info {
+    text-align: start;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #222;
+
+}
+.list-item-info .list-time{
+    font-size: 1vw;
+    color: #666;
+}
+
+.list-item-info .list-content{
+    font-size: 1.5vw;
+    color: #666;
+}
