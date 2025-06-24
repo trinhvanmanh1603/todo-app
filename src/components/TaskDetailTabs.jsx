@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Popconfirm, Input } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
-import * as taskService from "../services/taskService";
 import SetTimePicker from "./SetTimePicker";
 import { LikeOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
 import "../styles/components/task-detail-tabs.scss";
+import { updateTask, removeTask } from "../queries/taskQueries";
 
 const TaskDetailTabs = ({
   tasks = [],
@@ -55,7 +55,7 @@ const TaskDetailTabs = ({
   };
 
   const handleUpdateTask = async (id, updatedData) => {
-    const updated = await taskService.updateTask(id, updatedData);
+    const updated = await updateTask(id, updatedData);
     const newList = taskList.map((task) =>
       task.id === id ? updated : task
     );
@@ -65,7 +65,7 @@ const TaskDetailTabs = ({
   };
 
   const handleDeleteTask = async (id) => {
-    await taskService.removeTask(id);
+    await removeTask(id);
     const updated = taskList.filter((task) => task.id !== id);
     updateBothStates(updated);
   };

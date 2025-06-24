@@ -21,7 +21,6 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/add-list" element={<AddList />} />
-
       </Routes>
     </Layout>
   )
