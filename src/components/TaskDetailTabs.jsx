@@ -5,20 +5,23 @@ import * as taskService from "../services/taskService";
 import SetTimePicker from "./SetTimePicker";
 import { LikeOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
+import { DatePicker } from "antd";
 
 const TaskDetailTabs = ({
   tasks = [],
-  setTaskList = () => {},
+  setTaskList = () => { },
   AddTask = null,
   today = null,
   showAddTask = false,
   onAdd = null,
-  setIsActive = () => {},
+  setIsActive = () => { },
   isActive = null,
 }) => {
   const [taskList, setLocalTaskList] = useState(tasks);
   const [editTaskId, setEditTaskId] = useState(null);
   const [editedTask, setEditedTask] = useState({});
+
+
 
   useEffect(() => {
     setLocalTaskList(tasks);
@@ -103,6 +106,7 @@ const TaskDetailTabs = ({
                         }
                         className="edit"
                       />
+
                       <Input
                         value={editedTask.title}
                         onChange={(e) =>
@@ -177,7 +181,7 @@ const TaskDetailTabs = ({
 
       {showAddTask && AddTask && isActive === today && (
         <div className="add-task-bar">
-          <AddTask day={today} onAdd={handleAddTask} />
+          <AddTask day={today} onAdd={handleAddTask}  />
         </div>
       )}
 

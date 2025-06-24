@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../../styles/features/menu-content/detail-day-task.scss';
 import { useParams } from 'react-router-dom';
 import TaskDetailTabs from '../../components/TaskDetailTabs';
-import AddTask from '../../components/AddTassk';
+import AddTask from '../../components/AddTask';
 import * as taskService from '../../services/taskService';
 
 const DetailDayTask = () => {

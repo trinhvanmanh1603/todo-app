@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/components/task-for-seven-day.scss";
 import TaskDetailTabs from "../../components/TaskDetailTabs";
-import AddTask from "../../components/AddTassk";
+import AddTask from "../../components/AddTask";
 import * as taskService from "../../services/taskService";
 
 const getNext7Days = () => {

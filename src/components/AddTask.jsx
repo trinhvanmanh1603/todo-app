@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { DatePicker } from "antd";
+import dayjs from "dayjs";
 import "../styles/components/add-task.scss";
 import SetTimePicker from "./SetTimePicker";
 
-const AddTask = ({ day, onAdd }) => {
+const AddTask = ({ day, onAdd, showDatePicker = false }) => {
   const [time, setTime] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(dayjs(day));
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,9 +18,9 @@ const AddTask = ({ day, onAdd }) => {
       return;
     }
 
-    const today = new Date(day).toISOString().split("T")[0];
+    const dateStr = selectedDate.format("YYYY-MM-DD");
     const newTask = {
-      date: today,
+      date: dateStr,
       time: time.format("HH:mm"),
       title,
       content,
@@ -32,6 +35,14 @@ const AddTask = ({ day, onAdd }) => {
   return (
     <form onSubmit={handleSubmit} className="add-task-form">
       <div className="add-task">
+        {showDatePicker && (
+          <DatePicker
+            value={selectedDate}
+            onChange={(value) => setSelectedDate(value)}
+            format="YYYY-MM-DD"
+            style={{ marginRight: "10px" }}
+          />
+        )}
         <SetTimePicker value={time} onChange={setTime} />
         <input type="text" name="title" placeholder="Title" required />
       </div>

@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from "react";
 import "./index.scss";
 import authStore from "../store/auth/athStore";
-import AddTask from "../components/AddTassk";
+import AddTask from "../components/AddTask";
 import TaskDetailTabs from "../components/TaskDetailTabs";
 import * as taskService from "../services/taskService";
 

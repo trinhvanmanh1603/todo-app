@@ -18,7 +18,7 @@ const MyList = () => {
     <div className="my-list">
       <div className="my-list-header">
         <h2 className="my-list-title">My List</h2>
-        <button className="new-task">+ New list</button>
+        <Link className="new-task" to="/add-list">+ New list</Link>
       </div>
       <ul className="list">
         {tasks.map((task) => (

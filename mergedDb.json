@@ -1,7 +1,7 @@
 {
   "accounts": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "email": "admin@gmail.com",
       "birthday": "1990-01-01",
@@ -11,7 +11,7 @@
       "avatarUrl": "/avatar.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "user1",
       "email": "user1@gmail.com",
       "birthday": "1995-05-15",
@@ -23,7 +23,7 @@
   ],
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "date": "2025-06-22",
       "time": "08:00",
       "title": "Họp nhóm dự án",
@@ -31,7 +31,7 @@
       "state": false
     },
     {
-      "id": 2,
+      "id": "2",
       "date": "2025-06-22",
       "time": "10:30",
       "title": "Gọi điện khách hàng",
@@ -39,7 +39,7 @@
       "state": false
     },
     {
-      "id": 3,
+      "id": "3",
       "date": "2025-06-22",
       "time": "14:00",
       "title": "Kiểm tra chất lượng sản phẩm",
@@ -47,7 +47,7 @@
       "state": false
     },
     {
-      "id": 4,
+      "id": "4",
       "date": "2025-06-23",
       "time": "09:00",
       "title": "Lên kế hoạch marketing",
@@ -55,7 +55,7 @@
       "state": false
     },
     {
-      "id": 5,
+      "id": "5",
       "date": "2025-06-23",
       "time": "11:00",
       "title": "Đào tạo nhân viên mới",
@@ -63,7 +63,7 @@
       "state": false
     },
     {
-      "id": 6,
+      "id": "6",
       "date": "2025-06-23",
       "time": "15:00",
       "title": "Họp báo cáo tiến độ",
@@ -71,7 +71,7 @@
       "state": false
     },
     {
-      "id": 7,
+      "id": "7",
       "date": "2025-06-24",
       "time": "08:30",
       "title": "Phân tích dữ liệu khách hàng",
@@ -79,7 +79,7 @@
       "state": false
     },
     {
-      "id": 8,
+      "id": "8",
       "date": "2025-06-24",
       "time": "10:00",
       "title": "Chuẩn bị báo cáo tài chính",
@@ -87,7 +87,7 @@
       "state": false
     },
     {
-      "id": 9,
+      "id": "9",
       "date": "2025-06-24",
       "time": "13:30",
       "title": "Thảo luận chiến lược kinh doanh",
@@ -95,17 +95,49 @@
       "state": false
     },
     {
-      "id": 10,
+      "id": "10",
       "date": "2025-06-25",
       "time": "09:00",
       "title": "Kiểm tra bảo trì hệ thống IT",
       "content": "Đảm bảo hệ thống hoạt động ổn định và an toàn.",
       "state": false
+    },
+    {
+      "id": "c302",
+      "date": "2025-06-22",
+      "time": "00:30",
+      "title": "vbvbvc",
+      "content": "cvbvcb",
+      "state": false
+    },
+    {
+      "id": "fc05",
+      "date": "2025-06-23",
+      "time": "09:38",
+      "title": "a",
+      "content": "a",
+      "state": false
+    },
+    {
+      "id": "de9c",
+      "date": "2025-06-24",
+      "time": "09:38",
+      "title": "á",
+      "content": "âs",
+      "state": false
+    },
+    {
+      "id": "de43",
+      "date": "2025-06-23",
+      "time": "09:42",
+      "title": "âs",
+      "content": "âsas",
+      "state": false
     }
   ],
   "lists": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Personal List",
       "description": "A list of items",
       "items": [
@@ -136,7 +168,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Work List",
       "description": "A list of work-related items",
       "items": [
@@ -162,6 +194,29 @@
           "time": "13:30",
           "title": "Tối ưu hiệu năng",
           "content": "Phân tích và cải thiện hiệu suất hệ thống.",
+          "state": false
+        }
+      ]
+    },
+    {
+      "id": "94bc",
+      "title": "qưqw",
+      "description": "zxcx",
+      "items": [
+        {
+          "id": 1750668377065,
+          "date": "2025-06-25",
+          "time": "15:46",
+          "title": "zxc",
+          "content": "zxc",
+          "state": false
+        },
+        {
+          "id": 1750668523280,
+          "date": "2025-06-26",
+          "time": "15:48",
+          "title": "jhjhjh",
+          "content": "nvbnvn",
           "state": false
         }
       ]

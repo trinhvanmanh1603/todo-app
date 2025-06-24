@@ -8,6 +8,7 @@ import DetailDayTask from './features/menu-contents/DetailDayTask'
 import TaskMyList from './features/menu-contents/TaskMyList'
 import Login from './features/auth/Login'
 import RegisterForm from './features/auth/Register'
+import AddList from './components/AddList'
 function App() {
   return (
     <Layout>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/my-list/:id" element={<TaskMyList />} />
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<RegisterForm />} />
+        <Route path="/add-list" element={<AddList />} />
 
       </Routes>
     </Layout>

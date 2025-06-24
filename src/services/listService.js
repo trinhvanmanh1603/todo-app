@@ -12,11 +12,13 @@ export const listService = {
   },
 
   async create(newList) {
-    const res = await fetch(BASE_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newList),
-    });
+    const res = await fetch(BASE_URL,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newList),
+      }
+    );
     return res.json();
   },
 
@@ -34,6 +36,27 @@ export const listService = {
       method: "DELETE",
     });
     return res.ok;
+  },
+  
+  async addTaskToList(listId, newTask) {
+  try {
+    const res = await fetch(`${BASE_URL}/${listId}`);
+    const list = await res.json();
+
+    const newTaskWithId = { id: Date.now(), ...newTask };
+    const updatedItems = [...list.items, newTaskWithId];
+    const updateRes = await fetch(`${BASE_URL}/${listId}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ items: updatedItems }),
+    });
+
+    return await updateRes.json();
+  } catch (error) {
+    console.error("Failed to add task to list:", error);
+    return null;
   }
+}
+
 };
 

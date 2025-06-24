@@ -46,3 +46,7 @@ export const deleteList = async (id) => {
     return false;
   }
 };
+
+export const addTaskToList = async (listId, newTask) => {
+  return await listService.addTaskToList(listId, newTask);
+}
