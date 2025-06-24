@@ -30,9 +30,9 @@ const Menu = () => {
   }, []);
 
   const menuItems = [
-    { label: "My day", count: counts.today, link: "/home" },
+    { label: "To day", count: counts.today, link: "/home" },
     { label: "Next 7 days", count: counts.next7, link: "/task-form" },
-    { label: "All my tasks", count: counts.all, link: "/calendar" },
+    { label: "All tasks", count: counts.all, link: "/calendar" },
   ];
 
   return (
@@ -48,5 +48,6 @@ const Menu = () => {
     </nav>
   );
 };
+
 
 export default Menu;

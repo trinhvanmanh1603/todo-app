@@ -19,6 +19,12 @@
       "phone": "987-654-3210",
       "password": "user123",
       "avatarUrl": "/avatar2.png"
+    },
+    {
+      "id": "cbe3",
+      "username": "a",
+      "email": "mmmmanh345@gmail.com",
+      "password": "1"
     }
   ],
   "tasks": [
@@ -71,14 +77,6 @@
       "state": false
     },
     {
-      "id": "7",
-      "date": "2025-06-24",
-      "time": "08:30",
-      "title": "Phân tích dữ liệu khách hàng",
-      "content": "Xem xét hành vi và nhu cầu của khách hàng để cải thiện sản phẩm.",
-      "state": false
-    },
-    {
       "id": "8",
       "date": "2025-06-24",
       "time": "10:00",
@@ -116,14 +114,6 @@
       "time": "09:38",
       "title": "a",
       "content": "a",
-      "state": false
-    },
-    {
-      "id": "de9c",
-      "date": "2025-06-24",
-      "time": "09:38",
-      "title": "á",
-      "content": "âs",
       "state": false
     },
     {
@@ -220,6 +210,12 @@
           "state": false
         }
       ]
+    },
+    {
+      "id": "b550",
+      "title": "manh",
+      "description": "olalala",
+      "items": []
     }
   ]
 }

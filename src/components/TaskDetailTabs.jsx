@@ -5,7 +5,7 @@ import * as taskService from "../services/taskService";
 import SetTimePicker from "./SetTimePicker";
 import { LikeOutlined } from "@ant-design/icons";
 import dayjs from "dayjs";
-import { DatePicker } from "antd";
+import "../styles/components/task-detail-tabs.scss";
 
 const TaskDetailTabs = ({
   tasks = [],

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { addList } from "../queries/listQueries";
 const AddList = () => {
-  const [list, setList] = useState([]);
+  const [, setList] = useState([]);
   const handleAddList = async (e) => {
     e.preventDefault();
     const newList = {
@@ -24,15 +24,6 @@ const AddList = () => {
 
         <button type="submit">Add List</button>
       </form>
-      {!list ? (
-        <p style={{ color: "green" }}>
-          List "{list.name}" added successfully!
-        </p>
-      ) : (
-        <p style={{ color: "red" }}>
-          Failed to add list.
-        </p>
-      )}
     </div>
   );
 }

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import "../styles/components/leftsidebar.scss"
 import Account from "../features/auth"
 import Menu from "../features/menu";
-import MyList from "../features/menu/MyList";
+import MyList from "../features/menu/List";
 import Tags from "../features/menu/Tags";
-const LeftSideBar = () => {
+const SideBar = () => {
   return (
     <aside className="container">
       <Account {...Account} />
@@ -17,4 +17,4 @@ const LeftSideBar = () => {
   )
 }
 
-export default LeftSideBar
+export default SideBar

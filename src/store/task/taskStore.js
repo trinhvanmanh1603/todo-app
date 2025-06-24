@@ -1,4 +1,4 @@
-import { getTasks } from '../../services/taskService';
+import { getTasks } from '../../queries/taskQueries';
 
 const normalizeDate = (dateStr) => {
   const d = new Date(dateStr);

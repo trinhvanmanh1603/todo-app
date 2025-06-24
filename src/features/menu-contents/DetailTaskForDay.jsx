@@ -3,17 +3,17 @@ import '../../styles/features/menu-content/detail-day-task.scss';
 import { useParams } from 'react-router-dom';
 import TaskDetailTabs from '../../components/TaskDetailTabs';
 import AddTask from '../../components/AddTask';
-import * as taskService from '../../services/taskService';
+import { getTasks, addTask } from '../../queries/taskQueries';
 
-const DetailDayTask = () => {
-  const { date } = useParams(); // yyyy-mm-dd
+const DetailTaskForDay = () => {
+  const { date } = useParams();
   const [taskList, setTaskList] = useState([]);
   const [isActive, setIsActive] = useState(null);
 
   // Gọi API khi component mount
   useEffect(() => {
     const fetchTasks = async () => {
-      const tasks = await taskService.getTasks();
+      const tasks = await getTasks();
       setTaskList(tasks);
     };
     fetchTasks();
@@ -21,7 +21,7 @@ const DetailDayTask = () => {
 
   // Thêm task
   const handleAddTask = async (newTask) => {
-    const added = await taskService.addTask(newTask);
+    const added = await addTask(newTask);
     setTaskList((prev) => [...prev, added]);
   };
 
@@ -68,4 +68,4 @@ const DetailDayTask = () => {
   );
 };
 
-export default DetailDayTask;
+export default DetailTaskForDay;
