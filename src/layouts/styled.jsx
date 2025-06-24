@@ -1,4 +1,7 @@
-.app-layout {
+import { createGlobalStyle } from "styled-components";
+
+const GlobalLayoutStyle = createGlobalStyle`
+  .app-layout {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to bottom right, white, #96d9f0);
@@ -10,14 +13,12 @@
     left: 0;
     bottom: 0;
     overflow: hidden;
-}
-
-.app-body {
+  }
+  .app-body {
     width: 100%;
     display: flex;
-}
-
-.app-main {
+  }
+  .app-main {
     width: 78vw;
     height: 97vh;
     position: absolute;
@@ -30,11 +31,11 @@
     border-radius: 1vw;
     z-index: 0;
     @media (max-width: 432px) {
-        width: 100%;
-        padding-left: 1.5vw;
+      width: 100%;
+      padding-left: 1.5vw;
     }
-}
-.app-sidebar {
+  }
+  .app-sidebar {
     width: 22vw;
     position: absolute;
     left: 0;
@@ -43,17 +44,18 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     border-radius: 1vw;
-
     @media (max-width: 432px) {
-    display: none;
+      display: none;
+    }
   }
-}
-
-.login-page {
+  .login-page {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom right, #f0f4f8, #96d9f0);
-}
+  }
+`;
+
+export default GlobalLayoutStyle;

@@ -5,7 +5,7 @@ import { getListDetail } from "../../queries/listQueries";
 import AddTask from "../../components/AddTask";
 import { addTaskToList } from "../../queries/listQueries";
 
-const TaskMyList = () => {
+const TaskOfList = () => {
   const { id } = useParams();
   const [selectedList, setSelectedList] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -68,4 +68,4 @@ const TaskMyList = () => {
   );
 };
 
-export default TaskMyList;
+export default TaskOfList;

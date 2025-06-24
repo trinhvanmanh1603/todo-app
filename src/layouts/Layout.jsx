@@ -1,5 +1,6 @@
-import LeftSideBar from "../components/LeftSideBar";
-import "../styles/layout.scss";
+import SideBar from "../components/SideBar";
+import "./styled.jsx"
+import GlobalLayoutStyle from "./styled.jsx";
 import { useLocation } from "react-router-dom";
 
 const Layout = ({ children }) => {
@@ -7,10 +8,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className="app-layout">
+      <GlobalLayoutStyle />
       <div className="app-body">
         {!['/', '/register'].includes(location.pathname) && (
           <div className="app-sidebar">
-            <LeftSideBar />
+            <SideBar />
           </div>
         )}
 

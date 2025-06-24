@@ -1,9 +1,10 @@
+// src/pages/Home.tsx
 import React, { useMemo, useState, useEffect } from "react";
-import "./index.scss";
 import authStore from "../store/auth/athStore";
 import AddTask from "../components/AddTask";
 import TaskDetailTabs from "../components/TaskDetailTabs";
-import * as taskService from "../services/taskService";
+import { getTasks, addTask } from "../queries/taskQueries";
+import HomeWrapper from "./styled";
 
 function getTodayTasks(tasks) {
   const today = new Date();
@@ -19,18 +20,16 @@ const Home = () => {
   const user = auth.user;
   const [taskList, setTaskList] = useState([]);
 
-  // Gọi API lấy task
   useEffect(() => {
     const fetchTasks = async () => {
-      const tasks = await taskService.getTasks();
+      const tasks = await getTasks();
       setTaskList(tasks);
     };
     fetchTasks();
   }, []);
 
-  // Thêm task vào API và cập nhật state
   const handleAddTask = async (newTask) => {
-    const added = await taskService.addTask(newTask);
+    const added = await addTask(newTask);
     setTaskList((prev) => [...prev, added]);
   };
 
@@ -50,42 +49,45 @@ const Home = () => {
       : "Evening";
 
   return (
-    <div className="dashboard-root">
-      <div className="dashboard-main">
-        <h1 className="greeting">
-          Good {timeOfDay}, <span className="highlight">{user?.username}</span>
-          <span className="dot">.</span>
-        </h1>
-        <div className="subtitle">Be so good no one can ignore you</div>
-        <div className="day-card">
-          <div className="day-date">
-            <div className="day-date-main">
-              {dayOfWeek}
-              <br />
-              <span className="big">{day}</span>
-              <br />
-              {month}
+    <HomeWrapper>
+      <div className="dashboard-root">
+        <div className="dashboard-main">
+          <h1 className="greeting">
+            Good {timeOfDay},{" "}
+            <span className="highlight">{user?.username}</span>
+            <span className="dot">.</span>
+          </h1>
+          <div className="subtitle">Be so good no one can ignore you</div>
+          <div className="day-card">
+            <div className="day-date">
+              <div className="day-date-main">
+                {dayOfWeek}
+                <br />
+                <span className="big">{day}</span>
+                <br />
+                {month}
+              </div>
+            </div>
+            <div className="day-info">
+              <div className="meeting-title">
+                Don’t let yesterday’s problems haunt you today. Wishing you a
+                lucky new day!
+              </div>
             </div>
           </div>
-          <div className="day-info">
-            <div className="meeting-title">
-              Don’t let yesterday’s problems haunt you today. Wishing you a
-              lucky new day!
-            </div>
-          </div>
+          <TaskDetailTabs
+            tasks={todayTasks}
+            setTaskList={setTaskList}
+            AddTask={AddTask}
+            today={today}
+            showAddTask={true}
+            onAdd={handleAddTask}
+            setIsActive={setIsActive}
+            isActive={isActive}
+          />
         </div>
-        <TaskDetailTabs
-          tasks={todayTasks}
-          setTaskList={setTaskList}
-          AddTask={AddTask}
-          today={today}
-          showAddTask={true}
-          onAdd={handleAddTask}
-          setIsActive={setIsActive}
-          isActive={isActive}
-        />
       </div>
-    </div>
+    </HomeWrapper>
   );
 };
 

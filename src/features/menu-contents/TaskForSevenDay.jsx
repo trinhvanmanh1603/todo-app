@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../styles/components/task-for-seven-day.scss";
 import TaskDetailTabs from "../../components/TaskDetailTabs";
 import AddTask from "../../components/AddTask";
-import * as taskService from "../../services/taskService";
+import { getTasks, addTask } from "../../queries/taskQueries";
 
 const getNext7Days = () => {
   const days = [];
@@ -28,15 +28,14 @@ const TaskForSevenDay = () => {
   // Lấy toàn bộ task từ API
   useEffect(() => {
     const fetchTasks = async () => {
-      const tasks = await taskService.getTasks();
+      const tasks = await getTasks();
       setTaskList(tasks);
     };
     fetchTasks();
   }, []);
 
-  // hàm thêm task mới
   const handleAddTask = async (newTask) => {
-    const added = await taskService.addTask(newTask);
+    const added = await addTask(newTask);
     setTaskList((prev) => [...prev, added]);
   };
 
