@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Calendar } from "antd";
 import { useNavigate } from 'react-router-dom';
-import "../styles/components/Calendar.scss";
+import "../styles/components/calendar.scss";
 
 
 const CalendarComponent = () => {
