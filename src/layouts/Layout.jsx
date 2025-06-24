@@ -1,4 +1,4 @@
-import SideBar from "../components/SideBar";
+import SideBar from "../components/SideBar.jsx";
 import "./styled.jsx"
 import GlobalLayoutStyle from "./styled.jsx";
 import { useLocation } from "react-router-dom";

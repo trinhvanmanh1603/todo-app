@@ -1,5 +1,5 @@
 import './App.scss'
-import Layout from './layouts/layout'
+import Layout from './layouts/Layout'
 import { Route, Routes } from 'react-router-dom'
 import TaskForm from './features/menu-contents/TaskForSevenDay'
 import Home from './pages'
