@@ -25,12 +25,18 @@
       "username": "a",
       "email": "mmmmanh345@gmail.com",
       "password": "1"
+    },
+    {
+      "id": "34a6",
+      "username": "admin@gmail.com",
+      "email": "mmmmanh3425@gmail.com",
+      "password": "123"
     }
   ],
   "tasks": [
     {
       "id": "1",
-      "date": "2025-06-22",
+      "date": "2025-06-29",
       "time": "08:00",
       "title": "Họp nhóm dự án",
       "content": "Thảo luận tiến độ và phân chia công việc cho sprint mới.",
@@ -38,7 +44,7 @@
     },
     {
       "id": "2",
-      "date": "2025-06-22",
+      "date": "2025-06-30",
       "time": "10:30",
       "title": "Gọi điện khách hàng",
       "content": "Trao đổi về yêu cầu bổ sung cho module quản lý.",
@@ -46,7 +52,7 @@
     },
     {
       "id": "3",
-      "date": "2025-06-22",
+      "date": "2025-06-26",
       "time": "14:00",
       "title": "Kiểm tra chất lượng sản phẩm",
       "content": "Thực hiện kiểm thử và báo cáo lỗi.",
@@ -54,7 +60,7 @@
     },
     {
       "id": "4",
-      "date": "2025-06-23",
+      "date": "2025-06-30",
       "time": "09:00",
       "title": "Lên kế hoạch marketing",
       "content": "Chuẩn bị nội dung và lịch đăng bài cho tuần tới.",
@@ -62,7 +68,7 @@
     },
     {
       "id": "5",
-      "date": "2025-06-23",
+      "date": "2025-06-29",
       "time": "11:00",
       "title": "Đào tạo nhân viên mới",
       "content": "Hướng dẫn quy trình làm việc và công cụ sử dụng.",
@@ -70,7 +76,7 @@
     },
     {
       "id": "6",
-      "date": "2025-06-23",
+      "date": "2025-06-28",
       "time": "15:00",
       "title": "Họp báo cáo tiến độ",
       "content": "Cập nhật tình hình dự án và giải quyết vấn đề phát sinh.",
@@ -78,7 +84,7 @@
     },
     {
       "id": "8",
-      "date": "2025-06-24",
+      "date": "2025-06-28",
       "time": "10:00",
       "title": "Chuẩn bị báo cáo tài chính",
       "content": "Tổng hợp số liệu và phân tích chi phí, doanh thu.",
@@ -86,7 +92,7 @@
     },
     {
       "id": "9",
-      "date": "2025-06-24",
+      "date": "2025-06-27",
       "time": "13:30",
       "title": "Thảo luận chiến lược kinh doanh",
       "content": "Đề xuất các hướng đi mới cho công ty trong quý tới.",
@@ -94,7 +100,7 @@
     },
     {
       "id": "10",
-      "date": "2025-06-25",
+      "date": "2025-06-27",
       "time": "09:00",
       "title": "Kiểm tra bảo trì hệ thống IT",
       "content": "Đảm bảo hệ thống hoạt động ổn định và an toàn.",
@@ -102,7 +108,7 @@
     },
     {
       "id": "c302",
-      "date": "2025-06-22",
+      "date": "2025-06-27",
       "time": "00:30",
       "title": "vbvbvc",
       "content": "cvbvcb",
@@ -114,14 +120,6 @@
       "time": "09:38",
       "title": "a",
       "content": "a",
-      "state": false
-    },
-    {
-      "id": "de43",
-      "date": "2025-06-23",
-      "time": "09:42",
-      "title": "âs",
-      "content": "âsas",
       "state": false
     }
   ],

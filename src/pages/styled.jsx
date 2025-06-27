@@ -1,4 +1,3 @@
-// src/styles/features/home/home.styled.ts
 import styled from "styled-components";
 
 const HomeWrapper = styled.div`
