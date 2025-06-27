@@ -8,7 +8,7 @@ const HomeWrapper = styled.div`
   }
   .dashboard-main {
     flex: 2;
-    padding: 1vw;
+    padding: 1rem;
     overflow: auto;
   }
   .greeting {
@@ -38,7 +38,7 @@ const HomeWrapper = styled.div`
     padding: 1.2rem 2rem 1.2rem 1.5rem;
     align-items: center;
     width: 100%;
-    gap: 3vw;
+    gap: 3rem;
   }
   .day-date {
     font-size: 1.1rem;
@@ -60,14 +60,14 @@ const HomeWrapper = styled.div`
     flex: 1;
   }
   .meeting-title {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 500;
     color: #c80d45;
     margin-bottom: 0.5rem;
   }
   @media screen and (max-width: 768px) {
     .meeting-title {
-      font-size: 5vw;
+      font-size: 5rem;
     }
   }
   .meeting-links a {
@@ -102,7 +102,7 @@ const HomeWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 0.5vw;
+    gap: 0.5rem;
   }
   .task-meta {
     width: 100%;
@@ -111,7 +111,7 @@ const HomeWrapper = styled.div`
     font-size: 0.95rem;
     color: #b0b0b0;
     font-weight: 500;
-    gap: 0.5vw;
+    gap: 0.5rem;
   }
   .task-title {
     font-size: 1.15rem;
@@ -149,12 +149,12 @@ const HomeWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 3vw;
+    gap: 3rem;
   }
   .home-task .task-actions {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 1rem;
   }
 `;
 

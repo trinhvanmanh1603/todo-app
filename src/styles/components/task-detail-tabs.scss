@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 0.5vw;
+  gap: 0.5rem;
 }
 
 .task-meta {
@@ -35,7 +35,7 @@
   font-size: 0.95rem;
   color: #b0b0b0;
   font-weight: 500;
-  gap: 0.5vw;
+  gap: 0.5rem;
 }
 .task-title {
   font-size: 1.15rem;
@@ -74,11 +74,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 3vw;
+  gap: 3rem;
 }
 .home-task .task-actions {
   display: flex;
   align-items: center;
-  gap: 1vw;
+  gap: 1rem;
 }
 

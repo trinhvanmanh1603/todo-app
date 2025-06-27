@@ -18,22 +18,22 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 3vw;
+    gap: 3rem;
 }
 
 .list-item-info {
     text-align: start;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #222;
 
 }
 .list-item-info .list-time{
-    font-size: 1vw;
+    font-size: 1rem;
     color: #666;
 }
 
 .list-item-info .list-content{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #666;
 }

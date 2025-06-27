@@ -20,7 +20,7 @@ const MenuItem = styled(Link)`
   width: 100%;
   justify-content: space-between;
   gap: 10px;
-  padding: 0.5vw 1vw;
+  padding: 0.5rem 1rem;
   font-size: 16px;
   color: #222;
   cursor: pointer;
