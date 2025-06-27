@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Checkbox, Form, Input, message } from 'antd';
 import { useNavigate, Link } from 'react-router-dom';
 import authStore from '../../store/auth/athStore';
+import '../../styles/features/auth/login.scss';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -38,6 +39,7 @@ const Login = () => {
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
             autoComplete="off"
+            className='login-form'
         >
             <Form.Item
                 label="Email"
@@ -59,11 +61,12 @@ const Login = () => {
                 <Checkbox>Remember me</Checkbox>
             </Form.Item>
 
-            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Form.Item wrapperCol={{ offset: 8, span: 16 }} className='login-button'>
                 <Button type="primary" htmlType="submit">
                     Submit
                 </Button>
-                {loginStatus === true && (
+            </Form.Item>
+            {loginStatus === true && (
                 <p style={{ color: 'green' }}>Login successful!</p>
             )}
             {loginStatus === false && (
@@ -72,8 +75,6 @@ const Login = () => {
             <p>
                 Chưa có tài khoản? <Link to="/register">Đăng ký</Link>
             </p>
-            </Form.Item>
-            
         </Form>
     );
 };
