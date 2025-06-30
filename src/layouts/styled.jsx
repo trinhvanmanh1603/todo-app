@@ -20,7 +20,7 @@ const GlobalLayoutStyle = createGlobalStyle`
   }
   .app-main {
     width: 78vw;
-    height: 97vh;
+    height: 96.5vh;
     position: absolute;
     right: 0;
     padding: 1.5vw;
@@ -30,10 +30,19 @@ const GlobalLayoutStyle = createGlobalStyle`
     -ms-overflow-style: none;
     border-radius: 1vw;
     z-index: 0;
-    @media (max-width: 432px) {
+    @media (max-width: 1024px) {
       width: 100%;
       padding-left: 1.5vw;
     }
+  }
+
+  .app-header {
+    padding: 1rem 0;
+    padding-top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    
   }
   .app-sidebar {
     width: 22vw;
@@ -44,7 +53,54 @@ const GlobalLayoutStyle = createGlobalStyle`
     scrollbar-width: none;
     -ms-overflow-style: none;
     border-radius: 1vw;
-    @media (max-width: 432px) {
+  }
+  .sidebar-toggle {
+    display: none
+  }
+  @media (max-width: 1024px) {
+    .app-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 40%;
+      background: white;
+      z-index: 1000;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media (max-width: 468px) {
+      .app-sidebar {
+        width: 70%;
+      }
+    }
+
+    .app-sidebar.open {
+      transform: translateX(0);
+    }
+
+    .sidebar-toggle {
+      position: fixed;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0;
+      color: #000000;
+      z-index: 1100;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      background-color: transparent;
+      outline: none;
+      display: block;
+    }
+    .sidebar-toggle:focus,
+    .sidebar-toggle:active {
+      outline: none;
+      box-shadow: none;
+    }
+    
+    .hidden {
       display: none;
     }
   }

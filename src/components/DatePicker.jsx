@@ -12,7 +12,7 @@ const DatePickerComponent = () => {
     <div>
       <DatePicker onChange={onChange} needConfirm />
       {selectedDate && (
-        <div style={{ marginTop: 16 }}>
+        <div style={{ marginTop: "1rem" }}>
           Ngày đã chọn: <b>{selectedDate}</b>
         </div>
       )}

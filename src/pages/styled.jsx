@@ -8,7 +8,7 @@ const HomeWrapper = styled.div`
   }
   .dashboard-main {
     flex: 2;
-    padding: 1vw;
+    padding: 1rem;
     overflow: auto;
   }
   .greeting {
@@ -21,7 +21,7 @@ const HomeWrapper = styled.div`
   }
   .greeting .dot {
     color: #2196f3;
-    font-size: 2.7rem;
+    font-size: 2.75rem;
   }
   .subtitle {
     font-size: 2rem;
@@ -32,23 +32,23 @@ const HomeWrapper = styled.div`
   .day-card {
     display: flex;
     background-color: rgba(245, 245, 245, 0.8);
-    border-radius: 16px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 2rem;
-    padding: 1.2rem 2rem 1.2rem 1.5rem;
+    padding: 1.25rem 2rem 1.25rem 1.5rem;
     align-items: center;
     width: 100%;
-    gap: 3vw;
+    gap: 3rem;
   }
   .day-date {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 700;
     color: #b0b0b0;
     margin-right: 1.5rem;
     text-align: center;
   }
   .day-date-main {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 700;
   }
   .day-date-main .big {
@@ -60,20 +60,20 @@ const HomeWrapper = styled.div`
     flex: 1;
   }
   .meeting-title {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: 500;
     color: #c80d45;
     margin-bottom: 0.5rem;
   }
   @media screen and (max-width: 768px) {
     .meeting-title {
-      font-size: 5vw;
+      font-size: 1rem;
     }
   }
   .meeting-links a {
     color: #2196f3;
     font-size: 1rem;
-    margin-right: 1.2rem;
+    margin-right: 1.25rem;
     text-decoration: none;
   }
   .task-list {
@@ -81,66 +81,66 @@ const HomeWrapper = styled.div`
   }
   .task-card {
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
-    margin-bottom: 1.2rem;
-    padding: 1.1rem 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
   }
   .task-card.task-done {
     background: #e6f9ed;
-    border: 1.5px solid #2ecc40;
+    border: 0.1rem solid #2ecc40;
   }
   .task-card.task-overdue {
     background: #fff0f0;
-    border: 1.5px solid #ff4d4f;
+    border: 0.1rem solid #ff4d4f;
   }
   .task-edit {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 0.5vw;
+    gap: 0.5rem;
   }
   .task-meta {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #b0b0b0;
     font-weight: 500;
-    gap: 0.5vw;
+    gap: 0.5rem;
   }
   .task-title {
-    font-size: 1.15rem;
+    font-size: 1.125rem;
     color: #222;
     font-weight: 500;
   }
   .edit-area {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding: 0.5rem;
-    border: 1px solid #d9d9d9;
+    border: 0.0625rem solid #d9d9d9;
     font-size: 1rem;
     color: #222;
     resize: none;
   }
   .add-task-bar {
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.75rem 0 rgba(0, 0, 0, 0.06);
     color: #b0b0b0;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 0.75rem;
     margin-bottom: 1.5rem;
   }
   .add-task-bar .plus {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
   }
   .home-task {
@@ -149,12 +149,12 @@ const HomeWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 3vw;
+    gap: 3rem;
   }
   .home-task .task-actions {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 1rem;
   }
 `;
 

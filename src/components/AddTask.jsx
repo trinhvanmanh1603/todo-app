@@ -40,7 +40,7 @@ const AddTask = ({ day, onAdd, showDatePicker = false }) => {
             value={selectedDate}
             onChange={(value) => setSelectedDate(value)}
             format="YYYY-MM-DD"
-            style={{ marginRight: "10px" }}
+            style={{ marginRight: "0.75rem" }}
           />
         )}
         <SetTimePicker value={time} onChange={setTime} />

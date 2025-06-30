@@ -19,13 +19,13 @@ const MenuItem = styled(Link)`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 10px;
-  padding: 0.5vw 1vw;
-  font-size: 16px;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   color: #222;
   cursor: pointer;
-  border-radius: 8px;
-  margin-bottom: 2px;
+  border-radius: 0.5rem;
+  margin-bottom: 0.125rem;
   transition: background 0.15s;
 
   &:hover,
@@ -45,11 +45,11 @@ const MenuLabel = styled.span`
 const MenuCount = styled.span`
   background: #f0f6ff;
   color: #2196f3;
-  font-size: 13px;
+  font-size: 0.75rem;
   font-weight: 600;
-  border-radius: 999px;
-  padding: 2px 8px;
-  margin-left: 8px;
-  min-width: 24px;
+  border-radius: 50rem;
+  padding: 0.125rem 0.5rem;
+  margin-left: 0.5rem;
+  min-width: 1.5rem;
   text-align: center;
 `;

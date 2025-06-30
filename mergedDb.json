@@ -31,6 +31,18 @@
       "username": "admin@gmail.com",
       "email": "mmmmanh3425@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "ac13",
+      "username": "admin@gmail.com",
+      "email": "admin1@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "id": "0a12",
+      "username": "admin@gmail.com",
+      "email": "sdfdsfsf@gmail.com",
+      "password": "123"
     }
   ],
   "tasks": [
@@ -64,7 +76,7 @@
       "time": "09:00",
       "title": "Lên kế hoạch marketing",
       "content": "Chuẩn bị nội dung và lịch đăng bài cho tuần tới.",
-      "state": false
+      "state": true
     },
     {
       "id": "5",

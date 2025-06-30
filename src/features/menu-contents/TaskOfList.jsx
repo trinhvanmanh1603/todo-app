@@ -49,7 +49,7 @@ const TaskOfList = () => {
               type="checkbox"
               checked={item.state}
               onChange={() => handleCheck(item.id)}
-              style={{ width: 20, height: 20 }}
+              style={{ width: "1.25rem", height: "1.25rem" }}
             />
             <div className="list-item-info">
               <div className="list-time">

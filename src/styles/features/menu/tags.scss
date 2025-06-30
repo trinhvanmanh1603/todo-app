@@ -27,14 +27,13 @@
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 0.5vw 1vw;
-  font-size: 18px;
+  justify-content: space-between;    gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
   font-weight: 500;
   cursor: pointer;
-  border-radius: 8px;
-  margin-bottom: 2px;
+  border-radius: 0.5rem;
+  margin-bottom: 0.125rem;
   transition: background 0.15s;
   color: rgb(135, 135, 4);
 }
