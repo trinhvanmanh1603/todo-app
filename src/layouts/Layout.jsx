@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import SideBar from "../components/SideBar.jsx";
+import Footer from "../components/Footer.jsx";
+import Header from "../components/Header.jsx";
 import "./styled.jsx";
 import GlobalLayoutStyle from "./styled.jsx";
 import { useLocation } from "react-router-dom";
@@ -43,7 +45,7 @@ const Layout = ({ children }) => {
           <div>
             <button
               ref={toggleButtonRef}
-              className={`sidebar-toggle ${isSidebarOpen === true ? 'hidden' : 'sidebar-toggle'}`}
+              className={`sidebar-toggle ${isSidebarOpen ? 'hidden' : ''}`}
               onClick={toggleSidebar}
             >
               <MenuUnfoldOutlined />
@@ -56,7 +58,13 @@ const Layout = ({ children }) => {
         )}
 
         <main className={`app-main ${isAuthPage ? 'login-page' : ''}`}>
+          {!isAuthPage && <div className="app-header">
+            <Header />
+          </div>}
           {children}
+          {!isAuthPage && <div className="app-footer">
+            <Footer />
+          </div>}
         </main>
       </div>
     </div>

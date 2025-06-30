@@ -10,7 +10,7 @@ const SetTimePicker = ({ value, onChange }) => {
       onChange={onChange}
       allowClear={false}
       inputReadOnly
-      style={{ width: 120 }}
+      style={{ width: "7.5rem" }}
     />
   );
 };

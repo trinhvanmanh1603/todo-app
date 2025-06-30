@@ -43,6 +43,7 @@ const TaskDetailTabs = ({
       task.id === id ? { ...task, state: !task.state } : task
     );
     updateBothStates(updated);
+    updateTask(id, { state: !taskList.find(task => task.id === id).state });
   };
 
   const handleAddTask = async (newTask) => {
@@ -89,11 +90,11 @@ const TaskDetailTabs = ({
                 checked={!!task.state}
                 disabled={!past}
                 onChange={() => handleCheck(task.id)}
-                style={{ width: 20, height: 20 }}
+                style={{ width: "1.25rem", height: "1.25rem" }}
               />
 
               <div className="task-meta">
-                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
                   {isEditing ? (
                     <div className="task-edit">
                       <SetTimePicker
@@ -166,7 +167,7 @@ const TaskDetailTabs = ({
                   </Popconfirm>
                 ) : (
                   <EditOutlined
-                    style={{ marginLeft: 8, cursor: "pointer" }}
+                    style={{ marginLeft: "0.5rem", cursor: "pointer" }}
                     onClick={() => {
                       setEditTaskId(task.id);
                       setEditedTask({ ...task });
@@ -181,7 +182,7 @@ const TaskDetailTabs = ({
 
       {showAddTask && AddTask && isActive === today && (
         <div className="add-task-bar">
-          <AddTask day={today} onAdd={handleAddTask}  />
+          <AddTask day={today} onAdd={handleAddTask} />
         </div>
       )}
 

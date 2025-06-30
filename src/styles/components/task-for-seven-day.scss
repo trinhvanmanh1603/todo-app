@@ -8,22 +8,22 @@
 
 .seven-day-column {
   background-color: rgba(245, 245, 245, 0.8);
-  border-radius: 18px;
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+  border-radius: 1.125rem;
+  box-shadow: 0 0.125rem 0.75rem 0 rgba(0,0,0,0.06);
   min-width: 40rem;
   max-width: 50rem;
   flex: 1 1 0;
-  padding: 1.2rem 1rem 1.5rem 1rem;
+  padding: 1.25rem 1rem 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 1024px) {
+  @media (max-width: 64rem) {
     min-width: 90%;
     max-width: 100%;
   }
 }
 
 .seven-day-header {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 1rem;
   display: flex;
@@ -36,33 +36,33 @@
 .sub-label {
   color: #b0b0b0;
   font-weight: 600;
-  margin-left: 0.3rem;
+  margin-left: 0.25rem;
 }
 
 .seven-day-tasks {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.75rem;
 }
 
 .seven-day-task-card {
   background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
-  padding: 0.7rem 1rem 0.7rem 1rem;
-  margin-bottom: 0.2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.0625rem 0.25rem 0 rgba(0,0,0,0.04);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.25rem;
   align-items: start;
 }
 .task-meta {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: #b0b0b0;
   font-weight: 500;
 }
 .task-title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #222;
   font-weight: 500;
   text-align: start;
@@ -71,7 +71,7 @@
 .seven-day-add-task {
   margin-top: 0.5rem;
   background: #f5f5f5;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #b0b0b0;
   font-weight: 500;
   padding: 0;
@@ -79,7 +79,7 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  border: 1.5px solid #f0f0f0;
+  border: 0.1rem solid #f0f0f0;
   transition: background 0.15s, color 0.15s;
 }
 .plus:hover {
@@ -87,7 +87,7 @@
   color: #2196f3;
 }
 .seven-day-add-task button {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   outline: none;
   border: none;

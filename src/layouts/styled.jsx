@@ -20,7 +20,7 @@ const GlobalLayoutStyle = createGlobalStyle`
   }
   .app-main {
     width: 78vw;
-    height: 97vh;
+    height: 96.5vh;
     position: absolute;
     right: 0;
     padding: 1.5vw;
@@ -34,6 +34,15 @@ const GlobalLayoutStyle = createGlobalStyle`
       width: 100%;
       padding-left: 1.5vw;
     }
+  }
+
+  .app-header {
+    padding: 1rem 0;
+    padding-top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    
   }
   .app-sidebar {
     width: 22vw;
@@ -59,9 +68,6 @@ const GlobalLayoutStyle = createGlobalStyle`
       z-index: 1000;
       transform: translateX(-100%);
       transition: transform 0.3s ease-in-out;
-    }
-    .hidden {
-      display: none;
     }
 
     @media (max-width: 468px) {
@@ -92,6 +98,10 @@ const GlobalLayoutStyle = createGlobalStyle`
     .sidebar-toggle:active {
       outline: none;
       box-shadow: none;
+    }
+    
+    .hidden {
+      display: none;
     }
   }
   .login-page {
